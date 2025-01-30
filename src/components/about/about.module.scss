@@ -1,0 +1,63 @@
+.hover {
+    transition: var(--transition-micro-medium);
+
+    &:hover {
+        transform: translateX(var(--static-space-4));
+    }
+}
+
+.sidebar {
+    position: fixed;
+    // top: var(--static-space-64); /* or whichever offset you prefer */
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 16px;
+    /* set a width so main content can sit beside it */
+    width: calc(100%/3);
+    /* ensure it can scroll if it exceeds viewport height */
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.avatar {
+    position: relative;
+    height: fit-content;
+    top: var(--static-space-64);
+}
+
+.avatar,
+.tableOfContent {
+    /* push content away from the sidebar */
+    // margin: 30px; /* same as .sidebar width */
+    display: flex;          /* so you can center its content */
+    flex-direction: column; /* if needed */
+    align-items: center;    /* ensures text is centered inside flex */
+}
+
+.blockAlign {
+    /* push main content out from behind the sidebar */
+    margin-left: 240px; /* same as .sidebar width */
+}
+
+@media (--s) {
+    .avatar {
+        top: inherit;
+    }
+
+    .textAlign {
+        text-align: center;
+    }
+
+    .blockAlign {
+        align-self: center;
+        margin-left: 0;
+    }
+    .sidebar {
+        position: static;
+        width: auto;
+        height: auto;
+        max-height: none;
+        overflow-y: visible;
+        margin-bottom: var(--static-space-24);
+    }
+}
