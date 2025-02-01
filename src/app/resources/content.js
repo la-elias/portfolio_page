@@ -1,3 +1,5 @@
+import { title } from "process";
+
 const person = {
   firstName: "Luis",
   lastName: "Elias",
@@ -47,7 +49,7 @@ const social = [
 
 const about = {
     label: "About",
-    title: "About me",
+    title: "luch0247",
     description: `Hey this is ${person.name}, ${person.role} from ${person.location}!`,
     tableOfContent: {
       display: true,
@@ -72,12 +74,12 @@ const about = {
     },
     work: {
       display: true, // set to false to hide this section
-      title: "Work Experience",
+      title: "What I've built",
       experiences: [
         {
-          company: "FLY",
-          timeframe: "2022 - Present",
-          role: "Senior Design Engineer",
+          company: "Happy Teddies",
+          timeframe: "2024 - Present",
+          role: "Co-Founder & CTO",
           achievements: [
             <>
               Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -115,57 +117,205 @@ const about = {
           images: [],
         },
       ],
+      projects: [
+        {
+          title: "Happy Teddies",
+          description: (
+            <>
+              A design system that helps you build beautiful websites and applications faster.
+            </>
+          ),
+          link: "https://onceui.com",
+          images: [
+            {
+              src: "/images/projects/project-01/cover-01.jpg",
+              alt: "Once UI Project",
+              width: 16,
+              height: 9,
+            },
+            {
+              src: "/images/projects/project-01/cover-02.jpg",
+              alt: "Once UI Project",
+              width: 16,
+              height: 9,
+            }
+          ],
+        },
+        {
+          title: "Curie AI",
+          description: (
+            <>
+              The open-source Firebase alternative. Instantly add authentication, a real-time database, and storage to your Next.js app.
+            </>
+          ),
+          link: "https://supabase.io",
+          images: [
+            {
+              src: "/images/projects/project-02/cover-01.jpg",
+              alt: "Supabase Project",
+              width: 16,
+              height: 9,
+            },
+          ],
+        },
+        {
+          title: "Cooper",
+          description: (
+            <>
+              A design system that helps you build beautiful websites and applications faster.
+            </>
+          ),
+          link: "https://onceui.com",
+          images: [
+            {
+              src: "/images/projects/project-03/cover-01.jpg",
+              alt: "Once UI Project",
+              width: 16,
+              height: 9,
+            },
+          ],
+        },
+        {
+          title: "OCR API",
+          description: (
+            <>
+              A design system that helps you build beautiful websites and applications faster.
+            </>
+          ),
+          link: "https://onceui.com",
+          images: [
+            {
+              src: "/images/projects/project-01/cover-01.jpg",
+              alt: "Once UI Project",
+              width: 16,
+              height: 9,
+            },
+            {
+              src: "/images/projects/project-01/cover-02.jpg",
+              alt: "Once UI Project",
+              width: 16,
+              height: 9,
+            }
+          ],
+        },
+        {
+          title: "Arty",
+          description: (
+            <>
+              The open-source Firebase alternative. Instantly add authentication, a real-time database, and storage to your Next.js app.
+            </>
+          ),
+          link: "https://supabase.io",
+          images: [
+            {
+              src: "/images/projects/project-02/cover-01.jpg",
+              alt: "Supabase Project",
+              width: 16,
+              height: 9,
+            },
+          ],
+        },
+        {
+          title: "Grayola test",
+          description: (
+            <>
+              A design system that helps you build beautiful websites and applications faster.
+            </>
+          ),
+          link: "https://onceui.com",
+          images: [
+            {
+              src: "/images/projects/project-03/cover-01.jpg",
+              alt: "Once UI Project",
+              width: 16,
+              height: 9,
+            },
+          ],
+        },
+      ],
     },
     studies: {
       display: true, // set to false to hide this section
       title: "Studies",
       institutions: [
         {
-          name: "University of Jakarta",
-          description: <>Studied software engineering.</>,
+          name: "Universidad del Pacífico",
+          description: <>Studied business engineering.</>,
         },
         {
-          name: "Build the Future",
-          description: <>Studied online marketing and personal branding.</>,
+          name: "Exchange program in Switzerland",
+          description: <>Accelerate my startup at START Fellowship.</>,
         },
       ],
     },
     technical: {
       display: true, // set to false to hide this section
-      title: "Technical skills",
+      title: "Skills & Tools",
       skills: [
         {
           title: "Figma",
-          description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-          // optional: leave the array empty if you don't want to display images
-          images: [
-            {
-              src: "/images/projects/project-01/cover-02.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-            {
-              src: "/images/projects/project-01/cover-03.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-          ],
+          icon: "figma",
         },
         {
           title: "Next.js",
-          description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-          // optional: leave the array empty if you don't want to display images
-          images: [
-            {
-              src: "/images/projects/project-01/cover-04.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-          ],
+          icon: "nextjs",
         },
+        {
+          title: "React",
+          icon: "react",
+        },
+        {
+          title: "Tailwind CSS",
+          icon: "tailwind",
+        },
+        {
+          title: "Supabase",
+          icon: "supabase",
+        },
+        {
+          title: "Node.js",
+          icon: "node",
+        },
+        {
+          title: "Python",
+          icon: "python",
+        },
+        { 
+          title: "Javascript",
+          icon: "js",
+        },
+        {
+          title: "HTML",
+          icon: "html",
+        },
+        {
+          title: "CSS",
+          icon: "css",
+        },
+        {
+          title: "PostgreSQL",
+          icon: "postgresql",
+        },
+        {
+          title: "Docker",
+          icon: "docker",
+        },
+        {
+          title: "Git",
+          icon: "git",
+        },
+        {
+          title: "C++",
+          icon: "cplusplus",
+        },
+        { 
+          title: "Express",
+          icon: "express",
+        },
+        {
+          title: "Expo",
+          icon: "expo",
+        }
       ],
     },
 };

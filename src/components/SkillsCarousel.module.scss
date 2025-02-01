@@ -1,0 +1,28 @@
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* Adjust as needed for layout */
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .carouselTrack {
+    display: flex;
+    gap: 2rem; /* spacing between items */
+    overflow-x: hidden; /* hidden so we can handle the scrolling in JS */
+    scroll-behavior: smooth;
+    /* You can also consider using a wide width track if you want manual scroll:
+       width: max-content; 
+    */
+  }
+  
+  .carouselItem {
+    flex: 0 0 auto; /* item shouldn’t shrink */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* Add any additional styling, e.g. a border or hover effect */
+  }
+  

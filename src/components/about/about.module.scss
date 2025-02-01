@@ -39,6 +39,13 @@
     margin-left: 240px; /* same as .sidebar width */
 }
 
+.carouselItem {    
+    width: 100%;
+    padding: 8px;
+    flex-shrink: 0; // prevent shrinking so each card is full width
+    // justify-content: center;
+}
+
 @media (--s) {
     .avatar {
         top: inherit;
@@ -59,5 +66,18 @@
         max-height: none;
         overflow-y: visible;
         margin-bottom: var(--static-space-24);
+    }
+    .carousel {
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .arrow {
+        min-width: min-content;
+        min-height: min-content;
+    }
+    .carouselItem {
+        padding: 8px;
+        justify-content: flex-start;
     }
 }

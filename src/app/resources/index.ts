@@ -3,6 +3,7 @@ export {
     routes,
     effects,
     style,
+    newsletterAction,
 } from "@/app/resources/config";
 
 export {

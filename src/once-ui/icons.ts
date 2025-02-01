@@ -29,11 +29,14 @@ import {
   HiCheckCircle,
   HiOutlineShieldCheck,
   HiOutlineSparkles,
+  HiGlobeAmericas,
 } from "react-icons/hi2";
 
-import { RiVisaLine } from "react-icons/ri";
+import { RiVisaLine, RiNextjsFill, RiTailwindCssFill, RiSupabaseFill,  } from "react-icons/ri";
 
-import { FaDiscord, FaGithub, FaGoogle, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { SiCplusplus, SiPostgresql, SiExpress, SiExpo} from "react-icons/si";
+
+import { FaDiscord, FaGithub, FaGoogle, FaLinkedin, FaXTwitter, FaFigma, FaGitAlt, FaReact, FaNodeJs, FaPython, FaJs, FaHtml5, FaCss3Alt, FaDocker } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -70,4 +73,21 @@ export const iconLibrary: Record<string, IconType> = {
   visa: RiVisaLine,
   security: HiOutlineShieldCheck,
   sparkle: HiOutlineSparkles,
+  globe: HiGlobeAmericas,
+  figma: FaFigma,
+  git: FaGitAlt,
+  react: FaReact,
+  node: FaNodeJs,
+  python: FaPython,
+  js: FaJs,
+  html: FaHtml5,
+  css: FaCss3Alt,
+  docker: FaDocker,
+  cplusplus: SiCplusplus,
+  postgresql: SiPostgresql,
+  express: SiExpress,
+  nextjs: RiNextjsFill,
+  tailwind: RiTailwindCssFill,
+  supabase: RiSupabaseFill,
+  expo: SiExpo,
 };

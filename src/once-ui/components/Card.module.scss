@@ -2,4 +2,15 @@
     &:hover {
         background-color: var(--neutral-alpha-medium);
     }
+    // max-width: min-content;
+    // max-width: 220px;
+    min-width: 220px;
+}
+
+@media (--s) {
+    .card {
+        min-width: 33%;
+        max-width: 100%;
+        // max-width: 80px;
+    }
 }
