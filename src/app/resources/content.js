@@ -75,160 +75,148 @@ const about = {
     work: {
       display: true, // set to false to hide this section
       title: "What I've built",
-      experiences: [
-        {
-          company: "Happy Teddies",
-          timeframe: "2024 - Present",
-          role: "Co-Founder & CTO",
-          achievements: [
-            <>
-              Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-              engagement and 30% faster load times.
-            </>,
-            <>
-              Spearheaded the integration of AI tools into design workflows, enabling designers to
-              iterate 50% faster.
-            </>,
-          ],
-          images: [
-            // optional: leave the array empty if you don't want to display images
-            {
-              src: "/images/projects/project-01/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          company: "Creativ3",
-          timeframe: "2018 - 2022",
-          role: "Lead Designer",
-          achievements: [
-            <>
-              Developed a design system that unified the brand across multiple platforms, improving
-              design consistency by 40%.
-            </>,
-            <>
-              Led a cross-functional team to launch a new product line, contributing to a 15% increase
-              in overall company revenue.
-            </>,
-          ],
-          images: [],
-        },
-      ],
+      
       projects: [
         {
-          title: "Happy Teddies",
+          title: "Happy Teddies 🧸",
           description: (
             <>
-              A design system that helps you build beautiful websites and applications faster.
+              AI-powered plush toys that let users have real conversations with their favorite characters. 
+              Developed both the hardware and software, ensuring seamless voice interaction.
+            </>
+          ),
+          link: "https://happyteddies.com/",
+          tiktok: "https://www.tiktok.com/@happy_teddies",
+          images: [
+            {
+              src: "/images/projects/ht-project-1.mp4",
+              alt: "Happy Teddies",
+            },
+            {
+              src: "/images/projects/ht-project-2.jpg",
+              alt: "Customer HT",
+            },
+            {
+              src: "/images/projects/ht-project-3.jpg",
+              alt: "Social Media HT",
+            },
+            {
+              src: "/images/projects/ht-project-4.jpg",
+              alt: "HT Process",
+            },
+          ],
+        },
+        {
+          title: "Curie AI 📚",
+          description: (
+            <>
+              AI math tutor that reach 42K+ users, outperforming general AI models in solving equations and matrices. 
+              Engineered domain-specific intelligence for better step-by-step problem solving.
+            </>
+          ),
+          link: "https://www.iacurie.com/",
+          tiktok: "https://www.tiktok.com/@curietutor",
+          images: [
+            {
+              src: "https://www.youtube.com/watch?v=xEsoPwalWRs",
+              alt: "Curire Comparison",
+            },
+            {
+              src: "/images/projects/curie-project-1.jpg",
+              alt: "Testimonials",
+            },
+            {
+              src: "/images/projects/curie-project-2.jpg",
+              alt: "Google Badges",
+            },
+            {
+              src: "/images/projects/curie-project-3.jpg",
+              alt: "Growth Results",
+            },
+            {
+              src: "/images/projects/curie-project-4.jpg",
+              alt: "Landing Page",
+            }
+          ],
+        },
+        {
+          title: "Cooper.ai 🔍",
+          description: (
+            <>
+              A RAG-based system for document search, enabling instant information retrieval and summarization, with 1.5K users in 2 months.
             </>
           ),
           link: "https://onceui.com",
           images: [
             {
-              src: "/images/projects/project-01/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
+              src: "/images/projects/cooper-project-1.mp4",
+              alt: "Demo Video",
             },
             {
-              src: "/images/projects/project-01/cover-02.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
-            }
+              src: "/images/projects/cooper-project-2.jpg",
+              alt: "Cooper AI",
+            },
           ],
         },
         {
-          title: "Curie AI",
+          title: "OCR API 📜",
           description: (
             <>
-              The open-source Firebase alternative. Instantly add authentication, a real-time database, and storage to your Next.js app.
+              Transformed an open-source OCR project into a ready-to-use API endpoint, making text extraction from images faster and more accessible for developers.
+            </>
+          ),
+          link: "https://onceui.com",
+          images: [
+            {
+              src: "/images/projects/ocr-project-2.jpg",
+              alt: "Github code",
+            },
+            {
+              src: "/images/projects/ocr-project-1.jpg",
+              alt: "Postman",
+            },
+          ],
+        },
+        {
+          title: "Arty 🎨",
+          description: (
+            <>
+              An image transformation tool that applies stylized effects to photos, inspired by GTA aesthetics, Studio Ghibli, and other artistic styles.
             </>
           ),
           link: "https://supabase.io",
           images: [
             {
-              src: "/images/projects/project-02/cover-01.jpg",
+              src: "/images/cover.jpg",
               alt: "Supabase Project",
-              width: 16,
-              height: 9,
             },
           ],
         },
         {
-          title: "Cooper",
+          title: "Tasker Template 🚀",
           description: (
             <>
-              A design system that helps you build beautiful websites and applications faster.
+              A task management tool where tasks can be assigned, tracked, and marked as completed, with a clean responsive UI/UX for efficient workflow.
             </>
           ),
-          link: "https://onceui.com",
+          link: "https://tasker-template.vercel.app/",
+          repo: "https://github.com/la-elias/task-saas-template",
           images: [
             {
-              src: "/images/projects/project-03/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          title: "OCR API",
-          description: (
-            <>
-              A design system that helps you build beautiful websites and applications faster.
-            </>
-          ),
-          link: "https://onceui.com",
-          images: [
-            {
-              src: "/images/projects/project-01/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
+              src: "/images/projects/tasker-project-1.jpg",
+              alt: "Landing Page",
             },
             {
-              src: "/images/projects/project-01/cover-02.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
-            }
-          ],
-        },
-        {
-          title: "Arty",
-          description: (
-            <>
-              The open-source Firebase alternative. Instantly add authentication, a real-time database, and storage to your Next.js app.
-            </>
-          ),
-          link: "https://supabase.io",
-          images: [
-            {
-              src: "/images/projects/project-02/cover-01.jpg",
-              alt: "Supabase Project",
-              width: 16,
-              height: 9,
+              src: "/images/projects/tasker-project-2.jpg",
+              alt: "Dashboard",
             },
-          ],
-        },
-        {
-          title: "Grayola test",
-          description: (
-            <>
-              A design system that helps you build beautiful websites and applications faster.
-            </>
-          ),
-          link: "https://onceui.com",
-          images: [
             {
-              src: "/images/projects/project-03/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
+              src: "/images/projects/tasker-project-3.jpg",
+              alt: "Task Creation",
+            },
+            {
+              src: "/images/projects/tasker-project-4.jpg",
+              alt: "Task Management",
             },
           ],
         },

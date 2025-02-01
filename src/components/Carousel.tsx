@@ -6,6 +6,7 @@ import {
   Card,
   Column,
   Text,
+  Carousel,
 } from "@/once-ui/components"; // adjust imports as needed
 import styles from './about/about.module.scss';
 
@@ -22,8 +23,6 @@ interface ProjectsCarouselProps {
 interface images {
   src: string;
   alt: string;
-  width: number;
-  height: number;
 }
 
 export function ProjectsCarousel({ projects }: ProjectsCarouselProps) {
@@ -92,12 +91,12 @@ export function ProjectsCarousel({ projects }: ProjectsCarouselProps) {
                 radius="l-4"
                 direction="column"
               >
-                {/* You can replace this with your SmartImage or similar */}
-                {/* Keep aspect ratio for the image if needed */}
-                <div style={{ width: '100%', height: 0, paddingTop: '75%', backgroundColor: '#ccc' }}>
-                  {/* placeholder area for image */}
-                </div>
-
+                <Carousel
+                    images={project.images}
+                    aspectRatio="16 / 9"
+                    fillWidth
+                    radius="l"
+                />
                 <Column fillWidth paddingX="20" paddingY="24" gap="8">
                   <Text variant="body-default-xl">
                     {project.title}

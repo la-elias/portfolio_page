@@ -1,17 +1,15 @@
 import {
   Avatar,
   Button,
-  Card,
   Column,
   Flex,
   Heading,
   Icon,
   IconButton,
-  SmartImage,
   Tag,
   Text,
 } from "@/once-ui/components";
-import { JSX, Fragment } from "react";
+import { Fragment } from "react";
 import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
@@ -57,7 +55,7 @@ export default function About() {
     {
       title: about.work.title,
       display: about.work.display,
-      items: about.work.experiences.map((experience) => experience.company),
+      items: about.work.projects.map((project) => project.title),
     },
     {
       title: about.studies.title,
@@ -87,10 +85,6 @@ export default function About() {
             sameAs: social
               .filter((item) => item.link && !item.link.startsWith("mailto:")) // Filter out empty links and email links
               .map((item) => item.link),
-            worksFor: {
-              "@type": "Organization",
-              name: about.work.experiences[0].company || "",
-            },
           }),
         }}
       />
