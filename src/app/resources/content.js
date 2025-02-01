@@ -231,7 +231,7 @@ const about = {
           description: <>Studied business engineering.</>,
         },
         {
-          name: "Exchange program in Switzerland",
+          name: "START Fellow '24",
           description: <>Accelerate my startup at START Fellowship.</>,
         },
       ],
