@@ -55,7 +55,7 @@ grid: {
 };
 
 const newsletterAction = {
-    action: "https://url/subscribe/post?parameters",
+    action: "https://luise631992.substack.com/",
     effects: {
       mask: {
         cursor: false,
