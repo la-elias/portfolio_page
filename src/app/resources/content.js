@@ -159,37 +159,30 @@ const about = {
           ],
         },
         {
-          title: "OCR API 📜",
-          description: (
-            <>
-              Transformed an open-source OCR project into a ready-to-use API endpoint, making text extraction from images faster and more accessible for developers.
-            </>
-          ),
-          link: "https://onceui.com",
-          images: [
-            {
-              src: "/images/projects/ocr-project-2.jpg",
-              alt: "Github code",
-            },
-            {
-              src: "/images/projects/ocr-project-1.jpg",
-              alt: "Postman",
-            },
-          ],
-        },
-        {
           title: "Arty 🎨",
           description: (
             <>
-              An image transformation tool that applies stylized effects to photos, inspired by GTA aesthetics, Studio Ghibli, and other artistic styles.
+              An image transformation tool that applies stylized effects to photos, inspired by Van Gogh, Picasso, and other artistic styles.
             </>
           ),
-          link: "https://supabase.io",
+          link: "https://arty-six.vercel.app/",
           images: [
             {
-              src: "/images/cover.jpg",
-              alt: "Supabase Project",
+              src: "/images/projects/arty-project-1.mp4",
+              alt: "Video Demo",
             },
+            {
+              src: "/images/projects/arty-project-2.jpg",
+              alt: "Arty Example",
+            },
+            {
+              src: "/images/projects/arty-project-3.jpg",
+              alt: "Arty Example",
+            },
+            {
+              src: "/images/projects/arty-project-4.jpg",
+              alt: "Arty Example",
+            }
           ],
         },
         {
@@ -217,6 +210,25 @@ const about = {
             {
               src: "/images/projects/tasker-project-4.jpg",
               alt: "Task Management",
+            },
+          ],
+        },
+        {
+          title: "OCR API 📜",
+          description: (
+            <>
+              Transformed an open-source OCR project into a ready-to-use API endpoint, making text extraction from images faster and more accessible for developers.
+            </>
+          ),
+          link: "https://onceui.com",
+          images: [
+            {
+              src: "/images/projects/ocr-project-2.jpg",
+              alt: "Github code",
+            },
+            {
+              src: "/images/projects/ocr-project-1.jpg",
+              alt: "Postman",
             },
           ],
         },
